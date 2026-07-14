@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Raw PHI / hospital extracts (do not commit)
+raw/wait_times/
+raw/dispense/
+raw/layout/
+raw/schedules/
+raw/machine_changes/
+raw/**/*.xls
+raw/**/*.xlsx
+
+# Large derived artifacts
+data/*.parquet
+data/phase2/**/*.json
+data/phase2/**/*.parquet
+data/phase2/ns_cpts/
+data/phase2/ns_bandit_results/
+!data/phase2/constrained_machine_swap_40_pairs.csv
+
+*.log
+.DS_Store
+.idea/
+.vscode/
